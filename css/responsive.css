@@ -1,0 +1,273 @@
+/* ========================================
+   RESPONSIVE.CSS - Media Queries
+   ======================================== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  /* .hero-swiper {
+    height: 70vh;
+    min-height: 500px;
+  } */
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 60px 0; /* Reduce padding on tablets */
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  .footer-col {
+    margin-top: 30px;
+  }
+   .title {
+    font-size: 26px;
+  }
+
+  .slider-container {
+    max-width: 100%;
+  }
+  .skinCareHeighlight {
+    background: unset;
+    background-color: var(--light) !important;
+  }
+  .profileCtaContainer::after{
+  display: none;
+}
+.service-banner {
+    padding: 80px 0;
+    background-position: center;
+  }
+
+  .service-banner h1 {
+    font-size: 28px;
+  }
+
+  .banner-desc {
+    font-size: 14px;
+  }
+
+  /* Category Pages - Tablet */
+  .treatment-row {
+    flex-direction: column !important;
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .treatment-image-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .treatment-row.reversed .treatment-content {
+    text-align: left;
+  }
+
+  .treatment-row.reversed .treatment-title::after {
+    left: 0;
+    right: auto;
+  }
+
+  .category-banner {
+    padding: 80px 0;
+  }
+
+  .category-banner h1 {
+    font-size: 28px;
+  }
+
+  .cta-consultation-card {
+    padding: 30px;
+  }
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+  .dropdown-item{
+    text-align: center;
+  }
+}
+
+/* Small Devices (Phones, less than 768px) */
+@media (max-width: 767px) {
+
+  .section-padding {
+    padding: 40px 0; /* Tighten padding for mobile */
+  }
+
+
+  /* Adjust floating buttons size for mobile */
+  .fab-btn {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .fab-call {
+    font-size: 1.2rem;
+  }
+  
+  #backToTop {
+    width: 40px;
+    height: 40px;
+    bottom: 80px;
+  }
+  .footer{
+    text-align: center;
+  }
+  .socialLinks{
+    justify-content: center;
+  }
+  .footer-links a{
+    width: 100%;
+    max-width: 292px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .stat-item:not(.border-0) {
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+  .footer .footer-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
+.service-banner {
+    padding: 60px 0;
+  }
+
+  .service-banner h1 {
+    font-size: 22px;
+  }
+  .banner-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.breadcrumb {
+  justify-content: center;
+}
+
+  /* Category Pages - Mobile */
+  .category-banner {
+    padding: 60px 0;
+  }
+
+  .category-banner h1 {
+    font-size: 22px;
+  }
+
+  .category-banner-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .treatment-number {
+    font-size: 2.5rem;
+  }
+
+  .treatment-title {
+    font-size: 1.3rem;
+  }
+
+  .cta-consultation-card {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .cta-consultation-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-consultation-btn {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices (Smaller Phones, less than 576px) */
+
+@media (max-width: 575px) {
+
+.title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  #categoryFilters .btn-primary{
+   padding: 6px 12px ;
+   font-size: 12px;
+   line-height: unset ;
+}
+#categoryFilters .btn-outline-secondary{
+   padding: 6px 12px ;
+   font-size: 12px;
+   line-height: unset ;
+}
+
+.custom-accordion .accordion-button {
+  padding: 16px 12px;
+  font-size: 16px;
+}
+.accordion-body {
+  padding: 12px !important ;
+}
+.accordion-body p{
+  font-size: 14px;
+}
+#footer > div > div.row.gy-4 > div:nth-child(4) > ul > li.d-flex.align-items-center.gap-2.text-muted.mt-3 > a.d-flex.align-items-center{
+justify-content: center!important;
+text-align: center;
+}
+}
+
+@media (max-width: 439px) {
+  .HeroSlide1{
+  background: url('../images/BannerMob1.webp') center/cover no-repeat !important;
+} 
+  .HeroSlide2{
+  background: url('../images/BannerMob2.webp') center/cover no-repeat !important;
+} 
+  .HeroSlide3{
+  background: url('../images/BannerMob3.webp') center/cover no-repeat !important;
+} 
+  .HeroSlide4{
+  background: url('../images/BannerMob4.webp') center/cover no-repeat !important;
+} 
+.hero-content{
+  padding: 12px;
+  background-color: #f8cfe585;
+}
+}
+
+
+
+
+
+
+
+
+
+

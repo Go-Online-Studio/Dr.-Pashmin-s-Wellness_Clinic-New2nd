@@ -1,0 +1,372 @@
+{
+  "categories": [
+    {
+      "key": "skin-laser",
+      "name": "Skin & Laser",
+      "page": "skin-laser.html",
+      "tagline": "Reveal Your Most Radiant Self",
+      "description": "Experience the perfect fusion of advanced dermatology and cutting-edge laser technology. Our medically supervised skin and laser treatments are designed to address every concern — from stubborn acne to the earliest signs of aging — delivering luminous, youthful skin that speaks for itself."
+    },
+    {
+      "key": "hair-restoration",
+      "name": "Hair Restoration",
+      "page": "hair-restoration.html",
+      "tagline": "Reclaim Your Crowning Glory",
+      "description": "From the first signs of thinning to advanced hair loss, our comprehensive hair restoration program combines regenerative medicine, precision therapies, and surgical expertise to help you regain thick, healthy, confident hair."
+    },
+    {
+      "key": "weight-management",
+      "name": "Weight Management",
+      "page": "weight-management.html",
+      "tagline": "Transform Your Body, Transform Your Life",
+      "description": "Go beyond crash diets and quick fixes. Our medically supervised weight management programs target the root causes of weight gain — hormonal imbalances, metabolic dysfunction, and lifestyle factors — to deliver sustainable, lasting transformation."
+    },
+    {
+      "key": "ayurvedic-therapies",
+      "name": "Ayurvedic Therapies",
+      "page": "ayurvedic-therapies.html",
+      "tagline": "Ancient Wisdom, Modern Healing",
+      "description": "Rediscover balance through time-tested Ayurvedic and Panchkarma therapies. Our holistic protocols detoxify, rejuvenate, and restore your body's innate healing intelligence — naturally and without side effects."
+    }
+  ],
+  "treatments": [
+    {
+      "category": "skin-laser",
+      "title": "Acne & Scar Correction (Including CO2 Laser Resurfacing)",
+      "persuasive_description": "Stubborn acne and deep scars require targeted, medical-grade treatments. At Dr. Pashmin's, we go beyond topical fixes with a comprehensive root-cause analysis followed by customized medical-grade therapies. Our advanced scar revision therapies — including the gold standard CO2 Fractional Laser Resurfacing, micro-needling, and chemical peels — trigger intense collagen remodeling, smoothing out even the deepest scars to restore your skin's natural clarity.",
+      "benefits": [
+        "Root-cause diagnosis for hormonal & gut-related acne",
+        "Gold standard CO2 laser for deep scar revision",
+        "Intense collagen remodeling & texture improvement",
+        "Customized treatment plans for every skin type"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/cosmetologist-cleaning-woman-forehead-with-ultrasonic-scrubber_651396-1862.jpg",
+      "icon": "mdi:face-woman-shimmer"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Anti-Ageing, Wrinkle Reversal & Skin Tightening",
+      "persuasive_description": "Time may be inevitable, but looking your age certainly isn't. Our advanced anti-ageing protocols harness the power of collagen-stimulating lasers, radiofrequency energy, and precision treatments to visibly reduce fine lines, wrinkles, and sagging. This combative approach delivers a visible lifting effect without surgery — giving you firmer, tighter, and naturally rejuvenated skin.",
+      "benefits": [
+        "Collagen & elastin stimulation for firmer skin",
+        "Reduction of fine lines, wrinkles & crow's feet",
+        "Non-surgical lifting & contouring effect",
+        "Non-invasive with zero downtime options"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/close-up-senior-woman-getting-injection_23-2149350061.jpg",
+      "icon": "mdi:clock-minus-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Pigmentation, Melasma & Tan Removal",
+      "persuasive_description": "Uneven skin tone, dark patches, and sun damage can rob your complexion of its natural radiance. Our advanced pigmentation correction program combines targeted chemical peels, Q-switched lasers, and medical-grade brightening formulations to dissolve stubborn melanin deposits. Whether it's melasma triggered by hormones, post-inflammatory hyperpigmentation, or deep tanning — we restore your skin to a luminous, even-toned perfection.",
+      "benefits": [
+        "Targeted treatment for melasma, freckles & age spots",
+        "Advanced Q-switched laser therapy",
+        "Medical-grade brightening protocols",
+        "Long-lasting results with proper skin maintenance"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/client-beautician-s-appointment-consultation-face-shaping-preparation-upcoming-procedures-visual-examination-problem-areas_343596-4178.jpg?t=st=1775211340~exp=1775214940~hmac=f694bb5b012fe775b3f7452b374bf366dbc74c54f561d234184717e4207390d5&w=1480",
+      "icon": "mdi:palette-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Stretch Marks Treatment",
+      "persuasive_description": "Stretch marks from pregnancy, rapid weight changes, or growth spurts no longer have to be permanent. Our combination therapy — featuring fractional lasers, micro-needling RF, and specialized serums — works deep within the dermal layers to stimulate collagen regeneration, dramatically reducing the appearance of stretch marks and restoring smooth, even-textured skin you'll love to show off.",
+      "benefits": [
+        "Fractional laser + micro-needling RF combination",
+        "Deep collagen regeneration in dermal layers",
+        "Visible reduction in both old and new stretch marks",
+        "Safe for all skin types and body areas"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/surgeon-making-injection-into-female-body-liposuction-concept_1301-7784.jpg",
+      "icon": "mdi:shimmer"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Chemical Peels",
+      "persuasive_description": "Consider chemical peels your skin's fresh start. Our medical-grade peels — ranging from gentle glycolic to deep TCA formulations — are precisely calibrated to your skin's needs. They work by accelerating cellular turnover, dissolving dead skin layers, and revealing the brighter, smoother, more youthful complexion that lies beneath. Whether targeting acne, pigmentation, or dullness, chemical peels deliver visible transformation from the very first session.",
+      "benefits": [
+        "Customized peel strength for your skin type",
+        "Accelerated cellular turnover & renewal",
+        "Effective against dullness, acne & pigmentation",
+        "Visible improvement from the first session"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/woman-beauty-clinic-face-treatment_23-2148878928.jpg",
+      "icon": "mdi:layers-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Hydra Facial",
+      "persuasive_description": "The Hydra Facial is the gold standard of medical-grade facials — a luxurious multi-step treatment that cleanses, exfoliates, extracts impurities, and floods your skin with intensely hydrating serums. In just one session, you'll experience visibly smaller pores, improved texture, and a luminous 'glass skin' glow that lasts for weeks. It's the perfect treatment for any occasion — or simply because your skin deserves the best.",
+      "benefits": [
+        "Deep cleansing + painless extraction",
+        "Intense hydration with medical-grade serums",
+        "Instantly visible 'glass skin' glow",
+        "Suitable for all skin types, zero downtime"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4237.jpg",
+      "icon": "mdi:water-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Vampire Facial (PRP Facial)",
+      "persuasive_description": "Harness your body's own healing power for extraordinary skin rejuvenation. The Vampire Facial combines micro-needling with Platelet-Rich Plasma (PRP) extracted from your own blood, delivering a concentrated cocktail of growth factors directly into the skin. The result? Accelerated collagen production, reduced fine lines, diminished scars, and a natural, youthful radiance that no topical product can replicate.",
+      "benefits": [
+        "Uses your body's own growth factors (PRP)",
+        "Accelerated collagen & elastin production",
+        "Reduces scars, fine lines & enlarged pores",
+        "100% natural rejuvenation with minimal downtime"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&q=80",
+      "icon": "mdi:needle"
+    },
+     {
+      "category": "skin-laser",
+      "title": "Permanent Make-Up (PMU)",
+      "persuasive_description": "Wake up every day with perfectly defined eyebrows, luscious lip color, and flawless eyeliner — no mirror needed. Our Permanent Make-Up service uses precision microblading and micropigmentation techniques to enhance your natural features with semi-permanent, waterproof, smudge-proof results. Whether you want fuller brows, a natural lip blush, or defined eyes, our trained artists deliver subtle, beautiful enhancement that looks effortlessly natural.",
+      "benefits": [
+        "Eyebrows, lips & eyeliner enhancement",
+        "Precision microblading & micropigmentation",
+        "Waterproof & smudge-proof — lasts 1-3 years",
+        "Natural-looking results tailored to your features"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/beautician-doing-eyebrow-treatment-her-client_23-2148910497.jpg",
+      "icon": "mdi:brush-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Laser Hair Removal",
+      "persuasive_description": "Say goodbye to the endless cycle of shaving, waxing, and ingrown hairs. Our FDA-approved diode and Nd:YAG laser systems deliver precise, pain-minimized pulses that target hair follicles at their root — permanently reducing unwanted hair growth. Suitable for all skin tones and body areas, our laser hair removal gives you silky-smooth, maintenance-free skin that lasts a lifetime.",
+      "benefits": [
+        "FDA-approved diode & Nd:YAG technology",
+        "Permanent hair reduction in 6-8 sessions",
+        "Safe for all skin tones including Indian skin",
+        "Virtually painless with advanced cooling systems"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23661.jpg",
+      "icon": "mdi:flash-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Tattoo Removal",
+      "persuasive_description": "Changed your mind about that tattoo? Our advanced Q-switched laser technology safely and effectively breaks down tattoo ink particles into microscopic fragments that your body naturally eliminates. Whether it's a small symbol or a large piece, our precise calibration handles all ink colors and skin types — giving you a clean slate without scarring.",
+      "benefits": [
+        "Advanced Q-switched laser technology",
+        "Effective on all ink colors & skin types",
+        "Gradual, natural fading without scarring",
+        "Customized treatment intervals for best results"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/dermatologist-removing-mole-from-womans-shoulder_107420-74018.jpg",
+      "icon": "mdi:eraser"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Moles, Warts & Skin Tag Removal",
+      "persuasive_description": "Unwanted moles, warts, skin tags, and other benign skin growths can be safely and precisely removed in a quick, minimally invasive laser session. Our dermatologists use advanced CO2 and radiofrequency technology to ensure clean removal with minimal scarring and rapid healing — so you can enjoy flawless, blemish-free skin with confidence.",
+      "benefits": [
+        "Quick, in-clinic procedure (15-30 minutes)",
+        "Minimal scarring with precision laser/RF technology",
+        "Safe removal of moles, warts, skin tags & DPN",
+        "Rapid healing with proper aftercare guidance"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/dermatologist-latex-gloves-holding-dermatoscope-while-examining-attractive-patient-with-skin-disease-female-dermatologist-examining-patient-with-dermascope-looking-signs-skin-cancer_657921-295.jpg?t=st=1775212278~exp=1775215878~hmac=459ef831600a0e63afbf4c6985dcf1695e4d6cc38e3b43cc78415dd46093e42d&w=1480",
+      "icon": "mdi:close-circle-outline"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Carbon Laser Facial",
+      "persuasive_description": "The 'Hollywood Peel' that celebrities swear by. A layer of liquid carbon is applied to your face, then vaporized with a Q-switched Nd:YAG laser — instantly drawing out impurities, tightening pores, and leaving behind a brilliant, radiant glow. This zero-downtime treatment is perfect for oily, acne-prone, or dull skin, and the results are so immediate that you'll want to schedule it before every special occasion.",
+      "benefits": [
+        "Instant radiance — the 'Hollywood Glow' effect",
+        "Deep pore cleansing & oil control",
+        "Reduces pigmentation & evens skin tone",
+        "Zero downtime — return to your day immediately"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/close-up-woman-spa_23-2149144925.jpg",
+      "icon": "mdi:diamond-stone"
+    },
+    {
+      "category": "skin-laser",
+      "title": "Birth Mark Removal",
+      "persuasive_description": "Whether it's a flat pigmented birthmark or a raised vascular lesion, our advanced laser technology can safely and gradually fade birthmarks with precision. Using carefully calibrated wavelengths that target pigment or blood vessels without damaging surrounding skin, we help you achieve clearer, more uniform skin — boosting both appearance and confidence.",
+      "benefits": [
+        "Precision laser targeting for pigmented & vascular marks",
+        "Safe for sensitive areas including face",
+        "Gradual fading with each session",
+        "Minimal discomfort with topical anesthesia"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4234.jpg?t=st=1775212639~exp=1775216239~hmac=780a94e0a3b124178b0d9e0ee5021db982e3c8d575a903e624e28b2641ec08ea&w=1480",
+      "icon": "mdi:circle-half-full"
+    },
+    {
+      "category": "hair-restoration",
+      "title": "Comprehensive Hair Fall Treatment",
+      "persuasive_description": "Hair fall is rarely just about the hair — it's about hormonal imbalances, nutritional deficiencies, stress, and genetics working together. Our comprehensive approach begins with an in-depth scalp analysis and blood work to identify the exact triggers. We then craft a personalized protocol combining medical therapy, topical treatments, and lifestyle modifications to stop hair fall at its source and restore thick, healthy growth.",
+      "benefits": [
+        "In-depth scalp analysis & blood diagnostics",
+        "Treatment covers hair fall, dandruff, greying & alopecia",
+        "Addresses male pattern baldness & female hair thinning",
+        "Customized medical + lifestyle protocol"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80",
+      "icon": "mdi:head-outline"
+    },
+    {
+      "category": "hair-restoration",
+      "title": "Mesotherapy for Hair Growth",
+      "persuasive_description": "Mesotherapy delivers a powerful cocktail of vitamins, minerals, amino acids, and growth-promoting agents directly into the scalp's mesoderm — the layer where hair follicles live. This targeted micro-injection technique nourishes dormant follicles, improves scalp blood circulation, and creates the optimal environment for robust hair regrowth. It's the perfect non-surgical solution for thinning hair that responds beautifully from the very first few sessions.",
+      "benefits": [
+        "Direct nutrient delivery to hair follicles",
+        "Stimulates dormant follicles to active growth",
+        "Improves scalp circulation & follicle health",
+        "Painless micro-injections with visible results in weeks"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/side-view-woman-getting-prp-injection_23-2149341428.jpg",
+      "icon": "mdi:eyedropper"
+    },
+    {
+      "category": "hair-restoration",
+      "title": "PRP Therapy for Hair Regrowth",
+      "persuasive_description": "Platelet-Rich Plasma therapy is a revolutionary regenerative treatment that uses your body's own healing power to regrow hair. We draw a small sample of your blood, process it to extract a concentrated platelet-rich serum, and inject it into the scalp. These platelets release growth factors that awaken dormant follicles, thicken existing hair shafts, and significantly reduce hair fall — delivering natural, lasting results without any chemicals or surgery.",
+      "benefits": [
+        "100% natural — uses your own blood platelets",
+        "Stimulates dormant follicles to regrow",
+        "Significantly reduces hair fall within 3-4 sessions",
+        "Thickens existing hair shafts for visible density"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/man-getting-hair-loss-treatment_23-2149152756.jpg",
+      "icon": "mdi:water-plus-outline"
+    },
+    {
+      "category": "weight-management",
+      "title": "Customized Sustainable Weight Loss Programs",
+      "persuasive_description": "Forget crash diets and one-size-fits-all solutions. At Dr. Pashmin's Wellness Clinic, we engineer your weight loss journey from the ground up — starting with comprehensive metabolic and hormonal profiling. Our medically supervised programs combine personalized nutrition planning, metabolic correction, and continuous monitoring to target stubborn fat at its source. Whether you're battling PCOS-related weight gain, thyroid dysfunction, or simply years of resistant fat — our approach delivers sustainable, lasting transformation that respects your body's unique biochemistry.",
+      "benefits": [
+        "Comprehensive metabolic & hormonal profiling",
+        "Personalized nutrition & exercise planning",
+        "Ideal for PCOS, thyroid & insulin-resistant weight gain",
+        "Continuous medical monitoring for long-term success"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/unhealthy-word-scissor-with-food-showing-healthy-unhealthy-concept_23-2148193113.jpg",
+      "icon": "mdi:scale-bathroom"
+    },
+    {
+      "category": "weight-management",
+      "title": "Cryolipolysis (Fat Freezing)",
+      "persuasive_description": "Target and permanently eliminate stubborn fat pockets — without surgery, needles, or downtime. Cryolipolysis uses precisely controlled cooling technology to freeze and destroy fat cells in areas that resist diet and exercise: the abdomen, love handles, thighs, double chin, and arms. Your body naturally processes and eliminates these destroyed cells over the following weeks, revealing a sleeker, more sculpted silhouette. It's the ultimate lunchbreak body contouring treatment.",
+      "benefits": [
+        "Non-surgical, FDA-cleared fat reduction",
+        "Permanently destroys targeted fat cells",
+        "Treats abdomen, thighs, arms, chin & love handles",
+        "Zero downtime — return to normal activities immediately"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/masseur-doing-anti-cellulite-massage-client-spa-beauty-salon-using-oil_343596-4265.jpg",
+      "icon": "mdi:snowflake"
+    },
+    {
+      "category": "weight-management",
+      "title": "Inch Loss & Body Contouring",
+      "persuasive_description": "Sometimes the scale doesn't tell the full story — it's about how you look and feel in your clothes. Our advanced inch loss and body contouring protocols combine radiofrequency, ultrasound cavitation, and targeted therapies to break down localized fat, tighten loose skin, and sculpt your body's natural curves. Each session is tailored to your specific problem areas, delivering measurable inch loss and visible reshaping that builds session by session.",
+      "benefits": [
+        "Radiofrequency + ultrasound cavitation technology",
+        "Targeted inch loss in problem areas",
+        "Simultaneous skin tightening & fat reduction",
+        "Measurable results tracked session by session"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/physical-therapy-shin-with-shock-wave-extracorporeal-shockwave-therapy_169016-40797.jpg",
+      "icon": "mdi:human-handsdown"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Stress Management & Shirodhara",
+      "persuasive_description": "In today's fast-paced world, chronic stress silently erodes your health, sleep, and vitality. Our Ayurvedic stress management program — anchored by the deeply therapeutic Shirodhara treatment — creates a profound state of calm that resets your nervous system. Warm medicated oil is poured in a continuous stream over the forehead's 'third eye' point, inducing deep relaxation while balancing cortisol levels. Combined with herbal formulations and breathing techniques, this is wellness at its most transformative.",
+      "benefits": [
+        "Shirodhara — warm oil therapy for deep neural relaxation",
+        "Reduces cortisol levels & anxiety",
+        "Improves sleep quality & mental clarity",
+        "Complemented with herbal formulations & pranayama"
+      ],
+      "image_url": "images/Shirodhara.webp",
+      "icon": "mdi:meditation"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Pain Management — Kati, Janu & Greeva Basti",
+      "persuasive_description": "Living with chronic back pain, knee stiffness, or neck tension? Our specialized Ayurvedic pain management therapies offer profound, drug-free relief. Warm medicated oil is pooled over the affected area using a dough dam — allowing deep penetration of healing herbs into joints and muscles. Kati Basti (lower back), Janu Basti (knee), and Greeva Basti (neck) target inflammation at its source, providing lasting relief that pharmaceutical painkillers simply cannot match.",
+      "benefits": [
+        "Targeted warm oil therapy for specific pain areas",
+        "Deep herbal penetration into joints & muscles",
+        "Drug-free relief from chronic back, knee & neck pain",
+        "Reduces inflammation & improves mobility naturally"
+      ],
+      "image_url": "https://www.shutterstock.com/image-photo/man-engaged-ayurvedic-spa-treatment-600nw-225241243.jpg",
+      "icon": "mdi:bone"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "De-Addiction (Vyasan Mukti) Treatment",
+      "persuasive_description": "Breaking free from addiction requires more than willpower — it requires healing the mind, body, and spirit together. Our Ayurvedic De-Addiction (Vyasan Mukti) program uses time-tested Panchkarma detox protocols, specialized herbal formulations, and counseling to gently cleanse the body of toxins while addressing the psychological roots of dependency. This compassionate, holistic approach supports recovery without harsh withdrawal effects.",
+      "benefits": [
+        "Holistic Ayurvedic approach to addiction recovery",
+        "Panchkarma detox to cleanse accumulated toxins",
+        "Specialized herbal formulations to reduce cravings",
+        "Supportive counseling for psychological healing"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+      "icon": "mdi:heart-pulse"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Panchkarma Detox Therapies",
+      "persuasive_description": "Panchkarma — the five sacred purification therapies of Ayurveda — represents the deepest level of detoxification available in natural medicine. Our authentic Panchkarma protocols include Vaman (therapeutic emesis), Virechan (purgation), Basti (medicated enema), Nasya (nasal therapy), and Raktamokshan (blood purification). Each therapy is prescribed based on your unique constitution and health needs, systematically removing accumulated toxins and restoring your body to its optimal state of balance.",
+      "benefits": [
+        "Five authentic purification therapies (Vaman, Virechan, Basti, Nasya, Raktamokshan)",
+        "Personalized protocol based on Prakriti assessment",
+        "Deep detoxification at cellular level",
+        "Restores digestive fire (Agni) & metabolic balance"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
+      "icon": "mdi:leaf"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Ayurvedic Detox & Rejuvenation",
+      "persuasive_description": "Modern life exposes us to an unprecedented burden of toxins — from processed foods and pollution to digital stress. Our Ayurvedic Detox programs go beyond simple cleanses, using medicated oils, herbal steam baths, specialized diets, and therapeutic massages to flush toxins from every tissue layer. The result is renewed energy, clearer skin, sharper mental focus, and a profound sense of vitality that radiates from within.",
+      "benefits": [
+        "Full-body detox using ancient Ayurvedic protocols",
+        "Medicated oil massage (Abhyanga) & herbal steam (Swedana)",
+        "Eliminates toxins (Ama) from all tissue layers",
+        "Renewed energy, mental clarity & radiant skin"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80",
+      "icon": "mdi:spa-outline"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Disease Reversal Therapies",
+      "persuasive_description": "Chronic conditions like PCOS, Type-2 Diabetes, thyroid disorders, and autoimmune conditions don't have to define your life. Our Disease Reversal program integrates Ayurvedic medicine with modern diagnostics to address the root imbalances driving these conditions. Through customized herbal protocols, dietary restructuring, Panchkarma detox, and lifestyle medicine, we've helped countless patients reduce dependency on pharmaceutical drugs and reclaim their health — naturally.",
+      "benefits": [
+        "PCOS, Diabetes & Thyroid management through Ayurveda",
+        "Root-cause treatment — not just symptom suppression",
+        "Customized herbal protocols & dietary restructuring",
+        "Aim to reduce pharmaceutical drug dependency"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
+      "icon": "mdi:shield-check-outline"
+    },
+    {
+      "category": "ayurvedic-therapies",
+      "title": "Specialised Treatments",
+      "persuasive_description": "Some health challenges require deeply personalized care. Our Specialised Ayurvedic treatments address complex conditions including infertility, chronic skin diseases (eczema, psoriasis), respiratory disorders (asthma, sinusitis), and digestive issues. Each program is individually designed after thorough Nadi Pariksha (pulse diagnosis) and modern diagnostics, combining the best of Ayurvedic wisdom with evidence-based medicine for comprehensive, compassionate healing.",
+      "benefits": [
+        "Infertility support with proven Ayurvedic protocols",
+        "Chronic skin disease management (eczema, psoriasis)",
+        "Respiratory & digestive disorder treatment",
+        "Nadi Pariksha-guided personalized therapy plans"
+      ],
+      "image_url": "https://img.freepik.com/free-photo/skin-allergy-person-s-arm_23-2149140517.jpg?t=st=1775214041~exp=1775217641~hmac=51d6344137393a7fedcaef672807b1d8f94295e76d0294b7d29218fc2e242965&w=2000",
+      "icon": "mdi:medical-bag"
+    }
+  ]
+}

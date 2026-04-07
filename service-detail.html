@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | Dr. Pashmin's Wellness Clinic</title>
+    <link rel="icon" href="images/DrPashminFevicon.png" type="image/png" fetchpriority="low">
+    <link rel="preload" as="image" href="images/DrPashmin_s_WellnessClinicLogo.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+      .service-detail-img {
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        object-fit: cover;
+        height: 100%;
+        min-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="mainNavContainer">
+      <div id="mainNavbar"></div>
+    </header>
+    <main style="padding: 60px 0; min-height: 80vh;">
+      <div class="container px-4 px-md-5">
+        <nav aria-label="breadcrumb" class="mb-5" data-aos="fade-in">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="services.html">Services</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page" id="breadcrumbName">Loading...</li>
+          </ol>
+        </nav>
+        <div class="row gy-5">
+          <div class="col-lg-6" >
+            <img id="serviceImage" src="" alt="Service Image" class="service-detail-img w-100 d-none">
+            <div id="imagePlaceholder" class="w-100 bg-light rounded" style="min-height: 400px;"></div>
+          </div>
+          <div class="col-lg-6 ps-lg-5" >
+            <span id="serviceCategory" class="category-tag d-block mb-2">Loading...</span>
+            <h1 id="serviceTitle" class="mb-4">Loading Details...</h1>
+            <div id="serviceTags" class="mb-4"></div>
+            <div class="fs-5 text-muted mb-5" style="line-height: 1.8;" id="serviceDescription"> Please wait while we load the treatment details. </div>
+            <div class="d-flex flex-wrap gap-3 pt-3 border-top align-items-center">
+              <button id="whatsappEnquiryBtn" class="btn btn-primary btn-lg">
+                <iconify-icon icon="mdi:whatsapp" class="fs-4"></iconify-icon> Consult via WhatsApp
+              </button>
+              <a href="tel:+918347345777" class="btn btn-outline-secondary btn-lg">
+                <iconify-icon icon="mdi:phone" class="fs-4"></iconify-icon> Call Clinic
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <iconify-icon icon="mdi:chevron-up"></iconify-icon>
+    </a>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="js/critical.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get("id");
+        if (!serviceId) {
+          document.getElementById("serviceTitle").textContent = "Service Not Found";
+          document.getElementById("serviceDescription").textContent = "Please return to the services page to select a valid treatment.";
+          return;
+        }
+        try {
+          const response = await fetch("services.json");
+          const data = await response.json();
+          const service = data.services.find(s => s.id === serviceId);
+          if (!service) {
+            document.getElementById("serviceTitle").textContent = "Service Not Found";
+            return;
+          }
+          document.title = `${service.name} | Dr. Pashmin's Wellness Clinic`;
+          document.getElementById("breadcrumbName").textContent = service.name;
+          document.getElementById("serviceTitle").textContent = service.name;
+          document.getElementById("serviceCategory").textContent = `${service.category} • ${service.subcategory}`;
+          document.getElementById("serviceDescription").textContent = service.description;
+          const tagsContainer = document.getElementById("serviceTags");
+          tagsContainer.innerHTML = (service.tags || []).map(tag => `<span class="tag-pill">${tag}</span>`).join("");
+          const imgEl = document.getElementById("serviceImage");
+          if (service.images && service.images.length > 0) {
+            imgEl.src = service.images[0];
+            imgEl.alt = service.name;
+            imgEl.classList.remove("d-none");
+            document.getElementById("imagePlaceholder").classList.add("d-none");
+          }
+          document.getElementById("whatsappEnquiryBtn").addEventListener("click", () => {
+            const wpNum = "918347345777";
+            const message = encodeURIComponent(`Hello, I would like to book a consultation for:\n\nTreatment: ${service.name}\nCategory: ${service.category}\n\nPlease share availability.`);
+            const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const url = isMobile ? `https://api.whatsapp.com/send?phone=${wpNum}&text=${message}` : `https://web.whatsapp.com/send?phone=${wpNum}&text=${message}`;
+            window.open(url, "_blank");
+          });
+        } catch (error) {
+          console.error("Error fetching service details:", error);
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
