@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 footer-col">
-            <h5>Our Services</h5>
+            <h5>Our Treatments</h5>
             <ul class="footer-links">
               <li><a href="weight-management.html">Weight Management</a></li>
               <li><a href="skin-laser.html">Skin & Laser</a></li>
