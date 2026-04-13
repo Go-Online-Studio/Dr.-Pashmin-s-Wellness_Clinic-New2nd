@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
               
                <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
+                  Treatments
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="skin-laser.html">Skin & Laser</a></li>
