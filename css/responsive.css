@@ -241,6 +241,18 @@
 justify-content: center!important;
 text-align: center;
 }
+
+.who-for-section .d-flex .who-for-badge {
+    width: 100%;
+  }
+
+.safety-disclaimer-card{
+  padding: 18px 16px;
+}
+
+.category-banner-overlay, .category-banner::before{
+  background: linear-gradient(90deg, #220a178f 30%, #0000006b 100%) center/cover no-repeat;
+}
 }
 
 @media (max-width: 439px) {

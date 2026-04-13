@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     "hair-restoration.html": "hair-restoration",
     "weight-management.html": "weight-management",
     "ayurvedic-therapies.html": "ayurvedic-therapies",
+    "iv-drip-therapies.html": "iv-drip-therapies",
   };
 
   const currentPage = window.location.pathname.split("/").pop() || "";

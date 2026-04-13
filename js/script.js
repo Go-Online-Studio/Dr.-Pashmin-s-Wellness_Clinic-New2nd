@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li><a href="skin-laser.html">Skin & Laser</a></li>
               <li><a href="hair-restoration.html">Hair Restoration</a></li>
               <li><a href="ayurvedic-therapies.html">Ayurvedic Therapies</a></li>
+              <li><a href="iv-drip-therapies.html">IV Drip Therapies</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 footer-col">

@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <li><a class="dropdown-item" href="hair-restoration.html">Hair Restoration</a></li>
                   <li><a class="dropdown-item" href="weight-management.html">Weight Management</a></li>
                   <li><a class="dropdown-item" href="ayurvedic-therapies.html">Ayurveda</a></li>
+                  <li><a class="dropdown-item" href="iv-drip-therapies.html">IV Drip Therapies</a></li>
                 </ul>
               </li>
 

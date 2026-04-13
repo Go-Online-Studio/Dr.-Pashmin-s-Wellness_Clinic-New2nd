@@ -27,6 +27,13 @@
       "page": "ayurvedic-therapies.html",
       "tagline": "Ancient Wisdom, Modern Healing",
       "description": "Rediscover balance through time-tested Ayurvedic and Panchkarma therapies. Our holistic protocols detoxify, rejuvenate, and restore your body's innate healing intelligence — naturally and without side effects."
+    },
+    {
+      "key": "iv-drip-therapies",
+      "name": "IV Drip Therapies",
+      "page": "iv-drip-therapies.html",
+      "tagline": "IV Wellness Drips – Advanced Therapy for Skin, Hair & Energy",
+      "description": "At Dr. Pashmin's Wellness Clinic, our IV Drip Therapies deliver essential vitamins and nutrients directly into the bloodstream for faster absorption and visible results. These customized drips support glowing skin, stronger hair, improved energy, and overall wellness—offering quicker and more effective benefits than oral supplements."
     }
   ],
   "treatments": [
@@ -367,6 +374,90 @@
       ],
       "image_url": "https://img.freepik.com/free-photo/skin-allergy-person-s-arm_23-2149140517.jpg?t=st=1775214041~exp=1775217641~hmac=51d6344137393a7fedcaef672807b1d8f94295e76d0294b7d29218fc2e242965&w=2000",
       "icon": "mdi:medical-bag"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Skin Lightening & Glow Drip",
+      "persuasive_description": "A powerful antioxidant-based infusion designed to improve skin clarity, brightness, and overall glow from within. Glutathione is widely used in aesthetic IV therapies for its melanin-reducing and antioxidant effects. This drip floods your system with skin-brightening nutrients that work at the cellular level to deliver a luminous, even-toned radiance that's visible from the very first session.",
+      "benefits": [
+        "Improves skin brightness and even tone",
+        "Reduces pigmentation & dullness",
+        "Supports collagen production",
+        "Detoxifies at cellular level"
+      ],
+      "key_ingredients": ["Glutathione", "Vitamin C", "Biotin", "Zinc"],
+      "image_url": "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4237.jpg",
+      "icon": "mdi:star-four-points"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Weight Loss Support Drip",
+      "persuasive_description": "A metabolism-supporting IV therapy designed to boost energy and support fat metabolism. Important: IV therapy alone is not a weight-loss solution; sustainable fat loss requires diet, activity, and lifestyle changes. This drip acts as a powerful complement to your weight-loss program by energizing your body and supporting metabolic function when you need it most.",
+      "benefits": [
+        "Supports metabolic activity",
+        "Boosts energy levels",
+        "Reduces fatigue during weight loss programs",
+        "Enhances workout performance"
+      ],
+      "key_ingredients": ["Vitamin B Complex", "L-Carnitine", "Magnesium", "Vitamin C"],
+      "image_url": "https://img.freepik.com/free-photo/unhealthy-word-scissor-with-food-showing-healthy-unhealthy-concept_23-2148193113.jpg",
+      "icon": "mdi:scale-bathroom"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Hair Revive Drip",
+      "persuasive_description": "A targeted nutrient infusion to strengthen hair follicles and reduce hair fall. This specialized cocktail delivers biotin, amino acids, and essential minerals directly to your scalp's blood supply — nourishing hair from the inside out. Ideal for those experiencing thinning, breakage, or slow growth, the Hair Revive Drip creates the perfect biological environment for healthy, strong hair.",
+      "benefits": [
+        "Reduces hair fall",
+        "Improves hair thickness",
+        "Strengthens roots",
+        "Supports scalp health"
+      ],
+      "key_ingredients": ["Biotin", "Amino acids", "Zinc", "Vitamin B Complex"],
+      "image_url": "https://img.freepik.com/free-photo/side-view-woman-getting-prp-injection_23-2149341428.jpg",
+      "icon": "mdi:hair-dryer-outline"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Muscle Recovery Drip",
+      "persuasive_description": "Ideal for post-workout recovery and muscle repair. Whether you're an athlete, a fitness enthusiast, or someone recovering from physical exertion, this precision drip replenishes lost electrolytes, reduces inflammation, and accelerates the cellular repair process. Feel the difference between a regular recovery and a medically optimized one.",
+      "benefits": [
+        "Reduces muscle soreness",
+        "Improves recovery time",
+        "Prevents cramps",
+        "Rehydrates body quickly"
+      ],
+      "key_ingredients": ["Magnesium", "Electrolytes", "Amino acids", "Vitamin C"],
+      "image_url": "https://img.freepik.com/free-photo/physical-therapy-shin-with-shock-wave-extracorporeal-shockwave-therapy_169016-40797.jpg",
+      "icon": "mdi:arm-flex"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Athlete Performance Drip",
+      "persuasive_description": "Designed for active individuals and athletes needing peak performance and hydration. This high-performance infusion delivers a precision blend of electrolytes, B vitamins, amino acids, and antioxidants to maximize endurance, sharpen focus, and prevent the fatigue that limits your performance. Train harder, recover faster, perform better.",
+      "benefits": [
+        "Enhances endurance",
+        "Boosts stamina",
+        "Prevents dehydration",
+        "Improves performance"
+      ],
+      "key_ingredients": ["Electrolytes", "B Vitamins", "Amino acids", "Antioxidants"],
+      "image_url": "https://img.freepik.com/free-photo/man-getting-hair-loss-treatment_23-2149152756.jpg",
+      "icon": "mdi:run-fast"
+    },
+    {
+      "category": "iv-drip-therapies",
+      "title": "Myers Cocktail (Classic Wellness Drip)",
+      "persuasive_description": "One of the most popular IV therapies, used for overall wellness, energy, and immunity. The Myers Cocktail is a widely used IV micronutrient therapy, but scientific evidence supporting broad health claims is limited. This time-tested formula delivers a comprehensive blend of essential vitamins and minerals to help you feel your best — boosting energy, supporting immunity, and combating daily fatigue.",
+      "benefits": [
+        "Boosts energy levels",
+        "Supports immunity",
+        "Reduces stress & fatigue",
+        "Improves general wellness"
+      ],
+      "key_ingredients": ["Vitamin B Complex", "Vitamin B12", "Vitamin C", "Magnesium", "Calcium"],
+      "image_url": "https://img.freepik.com/free-photo/close-up-woman-spa_23-2149144925.jpg",
+      "icon": "mdi:leaf-circle-outline"
     }
   ]
 }
