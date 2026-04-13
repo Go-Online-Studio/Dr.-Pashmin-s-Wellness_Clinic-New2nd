@@ -386,7 +386,7 @@
         "Detoxifies at cellular level"
       ],
       "key_ingredients": ["Glutathione", "Vitamin C", "Biotin", "Zinc"],
-      "image_url": "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4237.jpg",
+      "image_url": "images/SkinLighteningAndGlowDrip.webp",
       "icon": "mdi:star-four-points"
     },
     {
@@ -400,7 +400,7 @@
         "Enhances workout performance"
       ],
       "key_ingredients": ["Vitamin B Complex", "L-Carnitine", "Magnesium", "Vitamin C"],
-      "image_url": "https://img.freepik.com/free-photo/unhealthy-word-scissor-with-food-showing-healthy-unhealthy-concept_23-2148193113.jpg",
+      "image_url": "images/WeightLossSupportDrip.webp",
       "icon": "mdi:scale-bathroom"
     },
     {
@@ -414,7 +414,7 @@
         "Supports scalp health"
       ],
       "key_ingredients": ["Biotin", "Amino acids", "Zinc", "Vitamin B Complex"],
-      "image_url": "https://img.freepik.com/free-photo/side-view-woman-getting-prp-injection_23-2149341428.jpg",
+      "image_url": "images/HairReviveDrip.webp",
       "icon": "mdi:hair-dryer-outline"
     },
     {
@@ -428,7 +428,7 @@
         "Rehydrates body quickly"
       ],
       "key_ingredients": ["Magnesium", "Electrolytes", "Amino acids", "Vitamin C"],
-      "image_url": "https://img.freepik.com/free-photo/physical-therapy-shin-with-shock-wave-extracorporeal-shockwave-therapy_169016-40797.jpg",
+      "image_url": "images/MuscleRecoveryDrip.webp",
       "icon": "mdi:arm-flex"
     },
     {
@@ -442,7 +442,7 @@
         "Improves performance"
       ],
       "key_ingredients": ["Electrolytes", "B Vitamins", "Amino acids", "Antioxidants"],
-      "image_url": "https://img.freepik.com/free-photo/man-getting-hair-loss-treatment_23-2149152756.jpg",
+      "image_url": "images/AthletePerformanceDrip.webp",
       "icon": "mdi:run-fast"
     },
     {
@@ -456,7 +456,7 @@
         "Improves general wellness"
       ],
       "key_ingredients": ["Vitamin B Complex", "Vitamin B12", "Vitamin C", "Magnesium", "Calcium"],
-      "image_url": "https://img.freepik.com/free-photo/close-up-woman-spa_23-2149144925.jpg",
+      "image_url": "images/MyersCocktailDrip.webp",
       "icon": "mdi:leaf-circle-outline"
     }
   ]

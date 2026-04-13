@@ -1107,14 +1107,14 @@ iconify-icon {
   background-image: url('../images/Servicesbanner.jpg');
 }
 .hair-banner {
-  background-image: url('../images/Servicesbanner.jpg');
+  background-image: url('https://img.freepik.com/free-photo/adult-male-getting-hair-loss-treatment_23-2149152769.jpg?t=st=1776065236~exp=1776068836~hmac=4eab2fccc686c5b4207dcd6103dc364b30fcc541a51d8ad552dfbf340158292e&w=1060');
 }
 .weight-banner {
-  background-image: url('../images/Servicesbanner.jpg');
+  background-image: url('https://img.freepik.com/free-photo/groceries-scale-with-mock-up-note_23-2148262143.jpg?t=st=1776065468~exp=1776069068~hmac=b1df999b494e562ad5d0dad06cd83e77c07430634d1233a54e1180a06f8d380a&w=1060');
 }
-.ayurveda-banner {
-  background-image: url('../images/Servicesbanner.jpg');
-}
+.ayurveda-banner { 
+  background-image: url('https://img.freepik.com/free-photo/side-view-woman-working-spa_23-2150911789.jpg?t=st=1776065332~exp=1776068932~hmac=87eb13c57669081df2b34c641254119600959a45871de249cd17d526f6bd997a&w=1060');
+} 
 
 .category-banner-overlay,
 .category-banner::before {
@@ -1344,7 +1344,7 @@ iconify-icon {
 
  /* IV Drip banner override */
     .iv-drip-banner {
-      background-image: url('https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4237.jpg');
+      background-image: url('https://img.freepik.com/free-photo/patient-getting-chemotherapy-treatment_23-2149261090.jpg?t=st=1776064243~exp=1776067843~hmac=59109bb0539d523b2ad48f43f4973fcd4bd42e67e9d84885235495b88f458034&w=1480');
     }
 
     /* IV Drip unique sections */
