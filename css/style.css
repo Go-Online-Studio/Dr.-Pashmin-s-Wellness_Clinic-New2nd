@@ -264,6 +264,8 @@ h6,
   position: relative;
   z-index: 2;
   max-width: 600px;
+  padding: 20px;
+  background-color: #f8cfe59f;
 }
 
 .hero-content h1 {
