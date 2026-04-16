@@ -242,18 +242,13 @@ document.addEventListener("DOMContentLoaded", async function () {
       // Google Sheets Submission
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxWKsJAe-_8QYm8G1jvP8dGvSsmMf59xRXHSBJDBtShYeuAjGI2vOye5RUzqepZY9y5/exec'; // WARNING: You must use a Google Apps Script Web App URL here! Directly linking the Spreadsheet will cause a CORS error in the browser.
 
-      // 1. Try sending to Google Sheets first
+      // 1. Fire Google Sheets request in the background
       fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
-        .then(response => {
-          console.log('Google Sheets request executed.');
-          // 2. Open WhatsApp after request is done
-          openWhatsApp();
-        })
-        .catch(error => {
-          console.error('Error submitting to Google Sheets!', error.message);
-          // Always fallback to opening WhatsApp so the user is not disrupted
-          openWhatsApp();
-        });
+        .then(() => console.log('Google Sheets request executed in background.'))
+        .catch(error => console.error('Error submitting to Google Sheets!', error.message));
+
+      // 2. Open WhatsApp immediately to avoid 10-20 sec delay and prevent browser popup blockers!
+      openWhatsApp();
     });
   }
 });
