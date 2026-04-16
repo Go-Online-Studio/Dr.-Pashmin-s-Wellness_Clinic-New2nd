@@ -396,7 +396,11 @@
                 : `https://web.whatsapp.com/send?phone=${targetNumber}&text=${whatsappMsg}`;
 
             // Open WhatsApp
-            window.open(url, '_blank');
+            if (isMobile) {
+                window.location.href = url;
+            } else {
+                window.open(url, '_blank');
+            }
 
             // Reset form and validation state
             contactForm.reset();

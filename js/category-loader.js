@@ -228,7 +228,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             : `https://web.whatsapp.com/send?phone=${targetNumber}&text=${whatsappMsg}`;
         
         // Open WhatsApp
-        window.open(targetUrl, '_blank');
+        if (isMobileLocal) {
+            window.location.href = targetUrl;
+        } else {
+            window.open(targetUrl, '_blank');
+        }
         
         // Close Modal and Reset Form
         const modalInstance = bootstrap.Modal.getInstance(bookingModal);
