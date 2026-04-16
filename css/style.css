@@ -2,20 +2,34 @@
    GLOBAL VARIABLES & RESETS
    ======================================== */
 :root {
-  --text: #220a17;
-  --background: #ffe5f3;
-  --primary: #eb2890;
-  --secondary: #62021d;
-  --accent: #EF4FA4;
-  --primary-dark: #cc1b78;
-  --lightBG: #fcd0e6;
-  --dark: #2b2a2a;
-  --black: #000000; 
+  /* New Semantic Variables */
+  --brand-color: #925575;
+  --brand-hover: #7E4563;
+  --accent-color: #E69472;
+  --bg-main: #FDF5F2;
+  --bg-blush: #FAECE9;
+  --bg-highlight: #DCE7E0;
+  --bg-card: #FFF8F5;
+  --border-color: #D8C6CD;
+  --text-primary: #3A2F35;
+  --text-secondary: #6B5B63;
+
+  /* Overwrite existing vars for seamless mapping */
+  --primary: var(--brand-color);
+  --primary-dark: var(--brand-hover);
+  --accent: var(--accent-color);
+  --background: var(--bg-main);
+  --lightBG: var(--bg-blush);
+  --light-soft: var(--bg-blush);
+  --dark: var(--text-primary);
+  --black: var(--text-primary);
+  --secondary: var(--text-secondary);
+  --text: var(--text-primary);
   --light: #ffffff;
-  --light-soft: #fcf0f7;
+
   --nav-height: calc(16px + var(--brandHeight));
   --brandHeight: 76px;
-  --gradientColor: linear-gradient(to right, #eb2890, #EF4FA4);
+  --gradientColor: linear-gradient(to right, var(--primary), var(--accent));
 }
 
 .text-primary {
@@ -96,7 +110,7 @@ h6,
 /* Buttons */
 .btn-primary {
   background-color: var(--primary);
-  color: var(--dark);
+  color: var(--light); /* White text */
   border: 0;
   border-radius: 0;
   padding: 12px 30px;
@@ -122,9 +136,9 @@ h6,
 }
 
 .btn-outline-secondary {
-  background-color: transparent;
-  color: var(--accent);
-  border: 1px solid var(--primary);
+  background-color: var(--bg-blush);
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
   border-radius: 0;
   padding: 12px 30px;
   font-weight: 500;
@@ -136,12 +150,12 @@ h6,
 }
 
 .btn-outline-secondary:hover {
-  background-color: var(--primary);
-  color: var(--dark);
+  background-color: var(--brand-color);
+  color: var(--light);
 }
 .btn-check:checked+.btn.btn-outline-secondary, .btn.btn-outline-secondary.active, .btn.btn-outline-secondary.show, .btn.btn-outline-secondary:first-child:active, :not(.btn-check)+.btn.btn-outline-secondary:active{
-  background-color: var(--primary);
-  color: var(--dark);
+  background-color: var(--brand-color);
+  color: var(--light);
   transform: translateY(-2px);
   scale: 0.985;
   transform-origin: center;
@@ -265,7 +279,6 @@ h6,
   z-index: 2;
   max-width: 600px;
   padding: 20px;
-  background-color: #f8cfe59f;
 }
 
 .hero-content h1 {
@@ -284,7 +297,7 @@ h6,
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(181, 15, 101, 0.9);
+  background: var(--brand-color);
   z-index: 10;
   padding: 15px 10px;
   border-radius: 10px 0 0 10px;
@@ -463,12 +476,16 @@ iconify-icon {
   color: var(--black);
 }
 
+.serviceCards{
+  background-color: var(--light-soft);
+}
+
 /* Steps */
 .steps-wrapper {
   position: relative;
 }
 .simpleSteps {
-  background-color: var(--light-soft);
+  background-color: var(--bg-main);
 }
 
 .steps-wrapper::before {
@@ -505,7 +522,7 @@ iconify-icon {
 
 /* Active Step */
 .step-item:hover .step-number {
-  background: var(--primary-dark);
+  background: var(--accent-color);
   color: #fff;
 }
 
@@ -531,18 +548,18 @@ iconify-icon {
 }
 
 .step-item:hover .step-content {
-  background: var(--primary-dark);
+  background: var(--accent-color);
   color: #fff;
 }
 .step-item:hover .step-content:before {
-  border-top: 10px solid var(--primary-dark);
+  border-top: 10px solid var(--accent-color);
 }
 .step-item:hover h5 {
   color: var(--black);
 }
 .step-content h5 {
   margin-bottom: 8px;
-  color: var(--accent);
+  color: var(--text-primary);
 }
 
 .step-content p {
@@ -761,7 +778,7 @@ iconify-icon {
   display: flex;
   align-items: center;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.185);
 }
 
 /* LEFT TEXT */
@@ -801,7 +818,6 @@ iconify-icon {
 
 .service-card:hover .overlay {
   filter: contrast(1.8);
-  background: rgba(150, 25, 92, 0.459);
 }
 
 /* ========================================
@@ -837,7 +853,7 @@ iconify-icon {
   z-index: 2;
   transform: translate(-15%, -15%);
   border: 4px solid #fff;
-  box-shadow: 0 5px 15px rgba(235, 40, 144, 0.4);
+  box-shadow: 0 5px 15px #91557466;
 }
 
 .experience-badge .exp-number {
@@ -858,7 +874,7 @@ iconify-icon {
 }
 
 .input-with-icon .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(235, 40, 144, 0.25);
+  box-shadow: 0 0 0 0.2rem #91557466;
   background-color: #fff !important;
 }
 
@@ -947,7 +963,7 @@ iconify-icon {
 
 .footer .socialLinks a {
   color: #ffffff !important;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   background-color: rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
@@ -958,7 +974,7 @@ iconify-icon {
 }
 
 .footer .socialLinks a:hover {
-  background-color: var(--primary);
+  background-color: var(--bg-blush);
   color: var(--dark) !important;
 }
 
@@ -1071,14 +1087,14 @@ iconify-icon {
   box-shadow: none !important;
 }
 .custom-accordion .accordion-button:not(.collapsed) {
-  color: var(--primary-dark);
-  background-color: var(--lightBG);
+  color: var(--bg-main);
+  background-color: var(--accent-color);
 }
 .custom-accordion .accordion-button::after {
   filter: grayscale(100%) opacity(50%);
 }
 .custom-accordion .accordion-button:not(.collapsed)::after {
-  filter: invert(34%) sepia(87%) saturate(1514%) hue-rotate(69deg) brightness(97%) contrast(98%);
+   filter: grayscale(100%) opacity(50%);
 }
 .custom-accordion .accordion-body {
   padding: 20px 25px;
@@ -1123,7 +1139,7 @@ iconify-icon {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(34, 10, 23, 0.8) 30%, rgba(0,0,0,0.35) 100%);
+  background: linear-gradient(90deg, #4428379c 30%, rgba(0,0,0,0.35) 100%);
 }
 
 .category-banner-content {
@@ -1288,7 +1304,7 @@ iconify-icon {
 
 /* CTA Consultation Section */
 .cta-consultation {
-  background-color: var(--light-soft);
+  background-color: var(--bg-main);
 }
 
 .cta-consultation-card {
@@ -1351,7 +1367,7 @@ iconify-icon {
 
     /* IV Drip unique sections */
     .iv-intro-note {
-      background: linear-gradient(135deg, rgba(235,40,144,0.08), rgba(239,79,164,0.05));
+      background: linear-gradient(135deg, rgba(146,85,117,0.08), rgba(230,148,114,0.05));
       border-left: 4px solid var(--primary);
       border-radius: 0 8px 8px 0;
       padding: 18px 24px;
@@ -1388,7 +1404,7 @@ iconify-icon {
 
     .procedure-detail-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(235,40,144,0.12);
+      box-shadow: 0 16px 40px rgba(146,85,117,0.12);
     }
 
     .procedure-card-icon {
@@ -1453,7 +1469,7 @@ iconify-icon {
       font-weight: 500;
       color: var(--dark);
       transition: all 0.3s ease;
-      border: 1px solid rgba(235,40,144,0.1);
+      border: 1px solid rgba(146,85,117,0.1);
       margin: 6px;
     }
 
@@ -1461,7 +1477,7 @@ iconify-icon {
       background: var(--primary);
       color: #fff;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(235,40,144,0.25);
+      box-shadow: 0 8px 20px rgba(146,85,117,0.25);
     }
 
     .who-for-badge iconify-icon {
@@ -1534,7 +1550,7 @@ iconify-icon {
       font-size: 0.8rem;
       font-weight: 500;
       margin: 3px 3px 3px 0;
-      border: 1px solid rgba(235,40,144,0.15);
+      border: 1px solid rgba(146,85,117,0.15);
     }
 
     .ingredients-label {
@@ -1547,3 +1563,186 @@ iconify-icon {
       margin-top: 12px;
       display: block;
     }
+
+/* ========================================
+   PREMIUM SKIN CLINIC REDESIGN OVERRIDES
+   ======================================== */
+
+/* 1) Header / Navbar */
+.navbar {
+  background: var(--bg-main) !important;
+}
+.nav-link {
+  color: var(--text-primary) !important;
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--brand-color) !important;
+}
+
+/* 2) Hero Section */
+.hero-content {
+  background-color: #fffdfdb7 !important;
+}
+.hero-content h1 {
+  color: var(--text-primary) !important;
+}
+.hero-content p.lead {
+  color: var(--text-secondary) !important;
+}
+
+/* Labels, lines in Hero */
+.hero-content .subtitle {
+  color: var(--accent-color) !important;
+}
+
+/* 3) Service Cards */
+.service-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  border-color: var(--accent-color) !important;
+}
+.service-card h3, .service-card .title {
+  color: var(--text-primary) !important;
+}
+.service-card p, .service-card .description {
+  color: var(--text-secondary) !important;
+}
+.service-card iconify-icon, .service-card .icon {
+  color: var(--accent-color) !important;
+}
+.service-card .btn{
+  color: var(--light) !important;
+  background-color: var(--brand-color) !important;
+}
+
+.service-card:hover .overlay {
+  background: #3f243266 !important; /* brand color alpha */
+}
+
+/* 4) Before / After Result Section */
+.skinCareHeighlight h2, .skinCareHeighlight .title {
+  color: var(--text-primary) !important;
+}
+.skinCareHeighlight .description, .skinCareHeighlight p, .skinCareHeighlight span {
+  color: var(--brand-color) !important;
+}
+.skinCareHeighlight p.text-white{
+color: var(--bg-main) !important;
+}
+.slider-handle {
+  color: var(--brand-color) !important;
+}
+
+/* 5) Stats / Counter Section */
+.stats-counter-section, .stats-counter-container {
+  background-color: var(--brand-color) !important;
+}
+.stats-counter-section .stat-number {
+  color: var(--light) !important;
+}
+.stats-counter-section .stat-text {
+  color: var(--bg-blush) !important;
+}
+.stats-counter-section .stat-item {
+  border-right: 1px solid var(--accent-color) !important;
+}
+.stats-counter-section .stat-item:last-child {
+  border-right: none !important;
+}
+
+/* 6) FAQ Section */
+.faq-section {
+  background-color: var(--bg-blush) !important;
+}
+.faq-section .faq-question {
+  color: var(--text-primary) !important;
+}
+.faq-section .faq-icon.active {
+  color: var(--brand-color) !important;
+}
+.faq-section .faq-item {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* 7) Testimonial Section */
+.testimonial-section {
+  background-color: #ffffff !important;
+}
+.testimonial-section .quote-icon {
+  color: var(--accent-color) !important;
+}
+.testimonial-section p {
+  color: var(--text-secondary) !important;
+}
+.testimonial-section .client-name {
+  color: var(--text-primary) !important;
+}
+.testimonial-section .swiper-pagination-bullet-active {
+  background: var(--brand-color) !important;
+}
+
+/* 8) Booking / Contact Form */
+.booking-info-card {
+  background-color: var(--brand-color) !important;
+  color: #ffffff !important;
+}
+.booking-info-card * {
+  color: #ffffff !important;
+}
+.booking-form {
+  background-color: #ffffff !important;
+}
+.booking-form .form-control {
+  border: 1px solid var(--border-color) !important;
+}
+.booking-form .form-control:focus {
+  border-color: var(--brand-color) !important;
+  box-shadow: none !important;
+}
+.booking-form .btn-submit {
+  background-color: var(--brand-color) !important;
+  color: #ffffff !important;
+}
+.booking-form .btn-submit:hover {
+  background-color: var(--brand-hover) !important;
+}
+
+/* 9) Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(135deg, var(--brand-color) 0%, var(--accent-color) 100%) !important;
+}
+.newsletter-section .form-control {
+  background-color: #ffffff !important;
+}
+.newsletter-section .btn {
+  background-color: var(--brand-color) !important;
+  color: #ffffff !important;
+}
+
+/* 10) Footer */
+.footer {
+  background-color: var(--brand-color) !important;
+  border-top: none !important;
+}
+.footer h5, .footer .text-muted, .footer p {
+  color: #ffffff !important;
+}
+.footer a {
+  color: var(--bg-blush) !important;
+}
+.footer a:hover {
+  color: var(--light) !important;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2) !important;
+  color: rgba(255,255,255,0.8) !important;
+}
+.footer-links li iconify-icon, .locationLink iconify-icon {
+  color: var(--bg-blush) !important;
+}
+

@@ -101,6 +101,9 @@
   .dropdown-item{
     text-align: center;
   }
+  .simpleSteps .container>.row , .ivDripHighlight .container>.row,.aboutSec{
+    flex-direction: column-reverse;
+  }
 }
 
 /* Small Devices (Phones, less than 768px) */
