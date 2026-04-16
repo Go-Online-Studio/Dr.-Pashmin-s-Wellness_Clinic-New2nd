@@ -26,8 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </a>
             <p class="text-muted pe-md-4">A holistic wellness and aesthetic center dedicated to delivering medically supervised, result-oriented treatments.</p>
             <div class="d-flex gap-3 mt-4 socialLinks">
-              <a href="#" class="fs-5"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
-              <a href="#" class="fs-5"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+              <a target="_blank" href="https://www.facebook.com/p/Dr-Pashmins-Wellness-Clinic-100086181289817/" class="fs-5"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+              <a target="_blank" href="https://www.instagram.com/dr_pashmin/" class="fs-5"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+              <a target="_blank" href="https://in.linkedin.com/in/dr-pashmin-ansari-20a68a92" class="fs-5"><iconify-icon icon="ri:linkedin-fill"></iconify-icon></a>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 footer-col">
