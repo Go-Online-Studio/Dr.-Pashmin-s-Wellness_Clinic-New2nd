@@ -205,9 +205,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       const treatment = document.getElementById("bm_treatment").value;
       const category = document.getElementById("bm_category").value;
 
-      // Google Sheets Submission
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxWKsJAe-_8QYm8G1jvP8dGvSsmMf59xRXHSBJDBtShYeuAjGI2vOye5RUzqepZY9y5/exec'; // WARNING: You must use a Google Apps Script Web App URL here! Directly linking the Spreadsheet will cause a CORS error in the browser.
-      
       const formData = new FormData();
       formData.append('Name', name);
       formData.append('Phone', phone);
@@ -241,6 +238,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         bookingForm.reset();
         bookingForm.classList.remove('was-validated');
       };
+
+      // Google Sheets Submission
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxWKsJAe-_8QYm8G1jvP8dGvSsmMf59xRXHSBJDBtShYeuAjGI2vOye5RUzqepZY9y5/exec'; // WARNING: You must use a Google Apps Script Web App URL here! Directly linking the Spreadsheet will cause a CORS error in the browser.
 
       // 1. Try sending to Google Sheets first
       fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
