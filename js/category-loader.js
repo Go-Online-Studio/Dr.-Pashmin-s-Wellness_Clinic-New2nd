@@ -230,6 +230,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const category = document.getElementById("bm_category").value;
 
       const formData = new FormData();
+      formData.append('SheetName', 'Services Booking');
       formData.append('Name', name);
       formData.append('Phone', phone);
       formData.append('Gender', gender);
@@ -242,7 +243,23 @@ document.addEventListener("DOMContentLoaded", async function () {
       // Wrapper function to open WhatsApp after Google Sheet request completes
       const openWhatsApp = () => {
         // Formatting WhatsApp Message
-        const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a treatment.%0a%0a*Booking Details:*%0aCategory: ${category}%0aTreatment: ${treatment}%0a%0a*Patient Details:*%0aName: ${name}%0aPhone: ${phone}%0aGender: ${gender}%0aAge: ${age}%0aDate: ${date}%0aTime: ${time}`;
+        const message = `Hello Dr. Pashmin's Wellness Clinic,
+
+I would like to book a treatment.
+
+*Booking Details:*
+Category: ${category}
+Treatment: ${treatment}
+
+*Patient Details:*
+Name: ${name}
+Phone: ${phone}
+Gender: ${gender}
+Age: ${age}
+Date: ${date}
+Time: ${time}`;
+
+        const whatsappMsg = encodeURIComponent(message);
         
         const targetNumber = "918347345777";
         

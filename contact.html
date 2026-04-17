@@ -410,8 +410,41 @@
             const message = document.getElementById("cp_message").value.trim() || "N/A";
 
             // Format WhatsApp Message
-            const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a consultation.%0a%0a*My Details:*%0aName: ${name}%0aPhone: ${phone}%0aGender: ${gender}%0aAge: ${age}%0aPreferred Date: ${date}%0aPrimary Concern: ${concern}%0a%0a*Additional Message:*%0a${message}`;
+            const messageText = `Hello Dr. Pashmin's Wellness Clinic,
+
+I would like to book a consultation.
+
+*My Details:*
+Name: ${name}
+Phone: ${phone}
+Gender: ${gender}
+Age: ${age}
+Preferred Date: ${date}
+Primary Concern: ${concern}
+
+*Additional Message:*
+${message}`;
             
+            const whatsappMsg = encodeURIComponent(messageText);
+            
+            // --- Google Sheets Submission ---
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxWKsJAe-_8QYm8G1jvP8dGvSsmMf59xRXHSBJDBtShYeuAjGI2vOye5RUzqepZY9y5/exec';
+            const formData = new FormData();
+            formData.append('SheetName', 'Contact Us Booking');
+            formData.append('Name', name);
+            formData.append('Phone', phone);
+            formData.append('Gender', gender);
+            formData.append('Age', age);
+            formData.append('Date', date);
+            formData.append('Concern', concern);
+            formData.append('Message', message);
+
+            // Fire Google Sheets request in the background
+            fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+                .then(() => console.log('Contact form submitted to Google Sheets.'))
+                .catch(error => console.error('Error submitting contact form to Google Sheets!', error.message));
+
+            // --- WhatsApp Redirection ---
             // Clinic target number
             const targetNumber = "918347345777";
             let url = isMobile 
