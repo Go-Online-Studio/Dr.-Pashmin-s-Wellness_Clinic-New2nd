@@ -144,11 +144,34 @@ document.addEventListener("DOMContentLoaded", async function () {
                 <input type="tel" class="form-control modal-custom-input" id="bm_phone" placeholder="+91 XXXXX XXXXX" required>
                 <div class="invalid-feedback" style="font-size: 0.8rem;">Please enter a valid mobile number.</div>
               </div>
-              <div class="mb-3">
-                <label for="bm_address" class="form-label text-muted small fw-medium">Address</label>
-                <textarea class="form-control modal-custom-input" id="bm_address" rows="2" placeholder="Your Address" required style="resize: none;"></textarea>
-                <div class="invalid-feedback" style="font-size: 0.8rem;">Please enter your address.</div>
+
+              <div class="row gx-3">
+                <div class="col-6 mb-3">
+                  <div class="form-group position-relative">
+                    <label for="bm_gender" class="form-label text-muted small fw-medium">Gender</label>
+                    <div class="position-relative">
+                        <select id="bm_gender" class="form-select modal-custom-input text-muted appearance-none" required style="-webkit-appearance: none; appearance: none; cursor:pointer;" onchange="this.classList.remove('text-muted'); this.classList.add('text-dark');">
+                          <option value="" disabled selected>Select Gender</option> 
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">
+                          Please select your gender.
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-6 mb-3">
+                  <div class="form-group position-relative">
+                    <label for="bm_age" class="form-label text-muted small fw-medium">Your Age</label>
+                    <input type="number" id="bm_age" class="form-control modal-custom-input" placeholder="25" required min="1" max="120">
+                    <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please enter a valid age.</div>
+                  </div>
+                </div>
               </div>
+
               <div class="row gx-3">
                 <div class="col-md-6 mb-3">
                   <label for="bm_date" class="form-label text-muted small fw-medium">Preferred Date</label>
@@ -199,7 +222,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       const name = document.getElementById("bm_name").value.trim();
       const phone = document.getElementById("bm_phone").value.trim();
-      const address = document.getElementById("bm_address").value.trim();
+      const gender = document.getElementById("bm_gender").value.trim();
+      const age = document.getElementById("bm_age").value.trim();
       const date = document.getElementById("bm_date").value;
       const time = document.getElementById("bm_time").value;
       const treatment = document.getElementById("bm_treatment").value;
@@ -208,7 +232,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       const formData = new FormData();
       formData.append('Name', name);
       formData.append('Phone', phone);
-      formData.append('Address', address);
+      formData.append('Gender', gender);
+      formData.append('Age', age);
       formData.append('Date', date);
       formData.append('Time', time);
       formData.append('Treatment', treatment);
@@ -217,7 +242,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       // Wrapper function to open WhatsApp after Google Sheet request completes
       const openWhatsApp = () => {
         // Formatting WhatsApp Message
-        const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a treatment.%0a%0a*Booking Details:*%0aCategory: ${category}%0aTreatment: ${treatment}%0a%0a*Patient Details:*%0aName: ${name}%0aPhone: ${phone}%0aAddress: ${address}%0aDate: ${date}%0aTime: ${time}`;
+        const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a treatment.%0a%0a*Booking Details:*%0aCategory: ${category}%0aTreatment: ${treatment}%0a%0a*Patient Details:*%0aName: ${name}%0aPhone: ${phone}%0aGender: ${gender}%0aAge: ${age}%0aDate: ${date}%0aTime: ${time}`;
         
         const targetNumber = "918347345777";
         

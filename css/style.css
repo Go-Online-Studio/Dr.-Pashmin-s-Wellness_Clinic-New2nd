@@ -1694,6 +1694,21 @@ color: var(--bg-main) !important;
 .booking-info-card * {
   color: #ffffff !important;
 }
+input.text-muted, select.text-muted{
+  color: rgba(150, 150, 150, 0.774) !important;
+}
+select option{
+  color: var(--text-primary) !important;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-position: right calc(.375em + .8rem) center;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-position: right calc(.375em + .875rem) center;
+}
+
 .booking-form {
   background-color: #ffffff !important;
 }

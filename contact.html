@@ -249,19 +249,40 @@
                    <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please enter a valid phone number.</div>
                  </div>
               </div>
-              <div class="col-md-6">
+
+
+              <div class="col-md-4">
                  <div class="form-group position-relative">
-                   <label for="cp_email" class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Email Address</label>
-                   <input type="email" id="cp_email" class="form-control custom-input" placeholder="john@example.com">
+                   <label for="cp_gender" class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Gender</label>
+                   <div class="position-relative">
+                       <select id="cp_gender" class="form-select custom-input text-muted appearance-none" required style="-webkit-appearance: none; appearance: none; cursor:pointer;" onchange="this.classList.remove('text-muted'); this.classList.add('text-dark');">
+                         <option value="" disabled selected>Select Gender</option> 
+                         <option>Male</option>
+                         <option>Female</option>
+                         <option>Other</option>
+                       </select>
+                       <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">
+                        Please select your gender.
+                      </div>
+                   </div>
                  </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
+                 <div class="form-group position-relative">
+                   <label for="cp_age" class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Your Age</label>
+                   <input type="number" id="cp_age" class="form-control custom-input" placeholder="25" required min="1" max="120">
+                   <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please enter a valid age.</div>
+                 </div>
+              </div>
+
+              <div class="col-md-4">
                  <div class="form-group position-relative">
                    <label for="cp_date" class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Preferred Date</label>
-                   <input type="date" id="cp_date" class="form-control custom-input unselected-date" required>
+                   <input type="date" id="cp_date" class="form-control custom-input unselected-date" required  onchange="this.classList.remove('unselected-date');">
                    <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please select a date.</div>
                  </div>
               </div>
+
               <div class="col-12 mt-4 pt-1">
                  <div class="form-group position-relative">
                    <label for="cp_concern" class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Primary Concern</label>
@@ -276,8 +297,9 @@
                          <option value="General Consultation">General Consultation</option>
                        </select>
                        <iconify-icon icon="mdi:chevron-down" class="position-absolute text-muted" style="right: 0; top: 50%; transform: translateY(-50%); pointer-events: none; font-size:1.2rem;"></iconify-icon>
+                       <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please select an area of concern.</div>
                    </div>
-                   <div class="invalid-feedback" style="font-size: 0.8rem; margin-top: 5px;">Please select an area of concern.</div>
+                   
                  </div>
               </div>
               <div class="col-12 mt-4 pt-1">
@@ -381,13 +403,14 @@
             // Gather field values
             const name = document.getElementById("cp_name").value.trim();
             const phone = document.getElementById("cp_phone").value.trim();
-            const email = document.getElementById("cp_email").value.trim() || "N/A";
+            const gender = document.getElementById("cp_gender").value.trim() || "N/A";
+            const age = document.getElementById("cp_age").value.trim() || "N/A";
             const date = document.getElementById("cp_date").value;
             const concern = document.getElementById("cp_concern").value;
             const message = document.getElementById("cp_message").value.trim() || "N/A";
 
             // Format WhatsApp Message
-            const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a consultation.%0a%0a*My Details:*%0aName: ${name}%0aPhone: ${phone}%0aEmail: ${email}%0aPreferred Date: ${date}%0aPrimary Concern: ${concern}%0a%0a*Additional Message:*%0a${message}`;
+            const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a consultation.%0a%0a*My Details:*%0aName: ${name}%0aPhone: ${phone}%0aGender: ${gender}%0aAge: ${age}%0aPreferred Date: ${date}%0aPrimary Concern: ${concern}%0a%0a*Additional Message:*%0a${message}`;
             
             // Clinic target number
             const targetNumber = "918347345777";
