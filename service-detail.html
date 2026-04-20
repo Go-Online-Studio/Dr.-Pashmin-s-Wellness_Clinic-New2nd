@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Details | Dr. Pashmin's Wellness Clinic</title>
+    <meta name="title" content="Dr. Pashmin's Wellness Clinic | Advanced Aesthetics & Ayurveda in Vadodara">
+    <meta name="description" content="Discover holistic medical and aesthetic care at Dr. Pashmin's Wellness Clinic in Vadodara. We offer 100% medically supervised, personalized treatments for skin, hair, weight management, and Ayurvedic therapies.">
+    <meta name="keywords" content="wellness clinic Vadodara, Dr. Pashmin, weight management Vadodara, skin and laser clinic, hair restoration, Ayurvedic therapies Vadodara, PCOS treatment, holistic medical care, non-surgical contouring, advanced aesthetics">
+    <meta name="author" content="Dr. Pashmin's Wellness Clinic">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Vadodara">
+    <meta name="geo.position" content="22.2939;73.1409"> 
+    <meta name="ICBM" content="22.2939, 73.1409">  
+
     <link rel="icon" href="images/DrPashminFevicon.png" type="image/png" fetchpriority="low">
     <link rel="preload" as="image" href="images/DrPashmin_s_WellnessClinicLogo.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/critical.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,7 +36,42 @@
   </head>
   <body>
     <header class="mainNavContainer">
-      <div id="mainNavbar"></div>
+      <div id="mainNavbar">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/DrPashmin_s_WellnessClinicLogo.webp" alt="Dr. Pashmin's Wellness Clinic">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Treatments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-laser.html">Skin & Laser</a></li>
+                  <li><a class="dropdown-item" href="hair-restoration.html">Hair Restoration</a></li>
+                  <li><a class="dropdown-item" href="weight-management.html">Weight Management</a></li>
+                  <li><a class="dropdown-item" href="ayurvedic-therapies.html">Ayurveda</a></li>
+                  <li><a class="dropdown-item" href="iv-drip-therapies.html">IV Drip Therapies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <a href="contact.html" class="btn btn-primary btn-sm px-4 py-2">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
     </header>
     <main style="padding: 60px 0; min-height: 80vh;">
       <div class="container px-4 px-md-5">
@@ -42,7 +88,7 @@
         </nav>
         <div class="row gy-5">
           <div class="col-lg-6" >
-            <img id="serviceImage" src="" alt="Service Image" class="service-detail-img w-100 d-none">
+            <img loading="lazy" id="serviceImage" src="" alt="Service Image" class="service-detail-img w-100 d-none">
             <div id="imagePlaceholder" class="w-100 bg-light rounded" style="min-height: 400px;"></div>
           </div>
           <div class="col-lg-6 ps-lg-5" >

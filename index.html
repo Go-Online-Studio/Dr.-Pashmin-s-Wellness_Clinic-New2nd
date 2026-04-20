@@ -221,6 +221,7 @@
   <link rel="preload"  as="image"  href="images/BannerMob1.webp"  fetchpriority="high">
   <link rel="preload"  as="image"  href="images/BannerMob3.webp"  fetchpriority="high">
 
+  <link rel="stylesheet" href="css/critical.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -244,8 +245,41 @@
 
   <header class="mainNavContainer">
     <div id="mainNavbar">
-      
-    </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/DrPashmin_s_WellnessClinicLogo.webp" alt="Dr. Pashmin's Wellness Clinic">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Treatments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-laser.html">Skin & Laser</a></li>
+                  <li><a class="dropdown-item" href="hair-restoration.html">Hair Restoration</a></li>
+                  <li><a class="dropdown-item" href="weight-management.html">Weight Management</a></li>
+                  <li><a class="dropdown-item" href="ayurvedic-therapies.html">Ayurveda</a></li>
+                  <li><a class="dropdown-item" href="iv-drip-therapies.html">IV Drip Therapies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <a href="contact.html" class="btn btn-primary btn-sm px-4 py-2">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
 
   </header>
 
@@ -330,7 +364,7 @@
 
       <div class="col-lg-6 col-xl-3" data-aos="fade-up">
         <div class="service-card">
-          <img src="images/Services3.webp" alt="Skin & Laser">
+          <img loading="lazy" src="images/Services3.webp" alt="Skin & Laser">
           <div class="overlay right">
             <div class="content">
               <h3>Skin & Laser</h3>
@@ -342,7 +376,7 @@
 
       <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
         <div class="service-card">
-          <img src="images/Services2.webp" alt="Hair Restoration">
+          <img loading="lazy" src="images/Services2.webp" alt="Hair Restoration">
           <div class="overlay left">
             <div class="content">
               <h3>Hair Restoration</h3>
@@ -354,7 +388,7 @@
 
       <div class="col-lg-6 col-xl-3" data-aos="fade-up"  data-aos-delay="200">
         <div class="service-card">
-          <img src="images/Services1.webp" alt="Weight Management">
+          <img loading="lazy" src="images/Services1.webp" alt="Weight Management">
           <div class="overlay right"> 
             <div class="content">
               <h3>Weight Management</h3>
@@ -366,7 +400,7 @@
 
       <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
         <div class="service-card">
-          <img src="images/Services4.webp" alt="Ayurvedic Therapies">
+          <img loading="lazy" src="images/Services4.webp" alt="Ayurvedic Therapies">
           <div class="overlay left">
             <div class="content">
               <h3>Ayurvedic Therapies</h3>
@@ -434,10 +468,10 @@
       <!-- RIGHT IMAGE -->
       <div class="col-lg-6 mb-5 mb-lg-0 ps-xl-5" data-aos="fade-left">
         <div class="image-wrapper">
-          <img src="https://img.freepik.com/free-photo/medium-shot-young-woman-with-pink-background_23-2149394087.jpg?t=st=1774606908~exp=1774610508~hmac=037f746d24b74f1a6d99c2f30c883e7987ede540e07700ceabe895736dceb58f&w=1480"
+          <img loading="lazy" src="https://img.freepik.com/free-photo/medium-shot-young-woman-with-pink-background_23-2149394087.jpg?t=st=1774606908~exp=1774610508~hmac=037f746d24b74f1a6d99c2f30c883e7987ede540e07700ceabe895736dceb58f&w=1480"
                class="img-fluid" alt="Skin Care">
                <div class="floatingElement" data-aos="zoom-in" data-aos-delay="300">
-                <img src="images/wellnessFloting.webp" alt="wellnessFloting">
+                <img loading="lazy" src="images/wellnessFloting.webp" alt="wellnessFloting">
                </div>
         </div>
       </div>
@@ -551,7 +585,7 @@
       <!-- RIGHT IMAGE -->
       <div class="col-lg-6 mb-5 mb-lg-0 ps-xl-5" data-aos="fade-left">
         <div class="image-wrapper">
-          <img src="images/IV_DripTherapies.webp"
+          <img loading="lazy" src="images/IV_DripTherapies.webp"
                class="img-fluid" alt="IV Drip Therapy at Dr. Pashmin's Wellness Clinic">
         </div>
       </div> 
@@ -599,7 +633,7 @@
                   <span class="exp-number count-up" data-count="15">0</span>
                   <span class="exp-text">Years<br>Experience</span>
                 </div>
-                <img src="images/ProfileBig.webp" alt="Dr. Pashmin" class="img-fluid rounded-circle about-clinic-circle-img">
+                <img loading="lazy" src="images/ProfileBig.webp" alt="Dr. Pashmin" class="img-fluid rounded-circle about-clinic-circle-img">
                 
                 <div class="call-clinic-arrow mt-4 d-flex align-items-start gap-2 justify-content-center justify-content-md-start" data-aos="fade-up" data-aos-delay="400">
                   <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="dashed-arrow-svg">
@@ -676,7 +710,7 @@
         </div>
         <div class="col-md-5 text-center" data-aos="fade-left" data-aos-delay="300">
           <div class="profileCtaContainer">
-            <img src="images/ProfilePic.webp" alt="Happy Client" class="img-fluid rounded-circle profileCta" style="max-width: 300px; height: 300px; object-fit: cover; border: 10px solid var(--primary);">
+            <img loading="lazy" src="images/ProfilePic.webp" alt="Happy Client" class="img-fluid rounded-circle profileCta" style="max-width: 300px; height: 300px; object-fit: cover; border: 10px solid var(--primary);">
           </div>
         </div>
       </div>

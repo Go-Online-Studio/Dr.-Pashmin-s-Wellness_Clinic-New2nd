@@ -1,57 +1,9 @@
-/* ========================================
-   GLOBAL VARIABLES & RESETS
-   ======================================== */
-:root {
-  /* New Semantic Variables */
-  --brand-color: #925575;
-  --brand-hover: #7E4563;
-  --accent-color: #E69472;
-  --bg-main: #FDF5F2;
-  --bg-blush: #FAECE9;
-  --bg-highlight: #DCE7E0;
-  --bg-card: #FFF8F5;
-  --border-color: #D8C6CD;
-  --text-primary: #3A2F35;
-  --text-secondary: #6B5B63;
-
-  /* Overwrite existing vars for seamless mapping */
-  --primary: var(--brand-color);
-  --primary-dark: var(--brand-hover);
-  --accent: var(--accent-color);
-  --background: var(--bg-main);
-  --lightBG: var(--bg-blush);
-  --light-soft: var(--bg-blush);
-  --dark: var(--text-primary);
-  --black: var(--text-primary);
-  --secondary: var(--text-secondary);
-  --text: var(--text-primary);
-  --light: #ffffff;
-
-  --nav-height: calc(16px + var(--brandHeight));
-  --brandHeight: 76px;
-  --gradientColor: linear-gradient(to right, var(--primary), var(--accent));
-}
 
 .text-primary {
   color: var(--primary) !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--text);
-  background-color: var(--background);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
 h1,
 h2,
 h3 {
@@ -161,85 +113,7 @@ h6,
   transform-origin: center;
 }
 
-/* ========================================
-   HEADER & NAVIGATION
-   ======================================== */
 
-.navbar {
-  padding: 8px 0;
-  background: var(--lightBG);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.navbar-brand {
-  height: var(--brandHeight);
-  padding: 0;
-}
-.navbar-brand img {
-  height: 100%;
-  width: auto;
-}
-
-.mainNavContainer {
-  height: var(--nav-height);
-}
-
-#mainNavbar {
-  z-index: 1055;
-}
-.scrolled {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  animation: scrolled 0.3s ease-in-out;
-}
-
-@keyframes scrolled {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-.nav-link {
-  color: var(--secondary);
-  font-weight: 500;
-  margin: 0 10px;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-}
-
-.nav-link:hover,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  color: var(--primary-dark);
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-  background: var(--lightBG);
-  border: 1px solid var(--primary);
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 0.5rem 0;
-}
-
-
-.dropdown-item {
-  color: var(--secondary);
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background-color: var(--primary);
-  color: var(--light-soft);
-}
 
 /* ========================================
    HERO BANNER (HOME PAGE)

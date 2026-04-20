@@ -34,6 +34,7 @@
     }
     </script>
 
+  <link rel="stylesheet" href="css/critical.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -45,7 +46,42 @@
 </head>
 <body>
   <header class="mainNavContainer">
-    <div id="mainNavbar"></div>
+    <div id="mainNavbar">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/DrPashmin_s_WellnessClinicLogo.webp" alt="Dr. Pashmin's Wellness Clinic">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Treatments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-laser.html">Skin & Laser</a></li>
+                  <li><a class="dropdown-item" href="hair-restoration.html">Hair Restoration</a></li>
+                  <li><a class="dropdown-item" href="weight-management.html">Weight Management</a></li>
+                  <li><a class="dropdown-item" href="ayurvedic-therapies.html">Ayurveda</a></li>
+                  <li><a class="dropdown-item" href="iv-drip-therapies.html">IV Drip Therapies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <a href="contact.html" class="btn btn-primary btn-sm px-4 py-2">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
   </header>
 
   <!-- Hero Banner -->
@@ -94,7 +130,7 @@
 
         <div class="col-lg-6" data-aos="fade-left">
           <div class="image-wrapper">
-            <img src="images/IV_DripTherapies.webp"
+            <img loading="lazy" src="images/IV_DripTherapies.webp"
                  class="img-fluid" alt="IV Drip Therapy at Dr. Pashmin's Wellness Clinic">
           </div>
         </div>

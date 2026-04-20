@@ -141,6 +141,7 @@
   <link rel="preload"  as="image"  href="images/aboutBanner.webp"  fetchpriority="high">
   <link rel="preload"  as="image"  href="images/ProfileBig.webp"  fetchpriority="high">
 
+  <link rel="stylesheet" href="css/critical.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -171,7 +172,42 @@
 </head>
 <body>
 
-  <header class="mainNavContainer"><div id="mainNavbar"></div></header>
+  <header class="mainNavContainer"><div id="mainNavbar">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/DrPashmin_s_WellnessClinicLogo.webp" alt="Dr. Pashmin's Wellness Clinic">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Treatments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-laser.html">Skin & Laser</a></li>
+                  <li><a class="dropdown-item" href="hair-restoration.html">Hair Restoration</a></li>
+                  <li><a class="dropdown-item" href="weight-management.html">Weight Management</a></li>
+                  <li><a class="dropdown-item" href="ayurvedic-therapies.html">Ayurveda</a></li>
+                  <li><a class="dropdown-item" href="iv-drip-therapies.html">IV Drip Therapies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <a href="contact.html" class="btn btn-primary btn-sm px-4 py-2">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div></header>
 
 <!-- =========================
      ABOUT BANNER
@@ -207,20 +243,20 @@
         </p>
         <div class="row g-2 mt-4">
           <div class="col-4">
-            <img src="images/AboutImageServices1.webp" class="img-fluid rounded shadow-sm" alt="Clinic Area">
+            <img loading="lazy" src="images/AboutImageServices1.webp" class="img-fluid rounded shadow-sm" alt="Clinic Area">
           </div>
           <div class="col-4">
-            <img src="images/AboutImageServices2.webp" class="img-fluid rounded shadow-sm" alt="Treatment">
+            <img loading="lazy" src="images/AboutImageServices2.webp" class="img-fluid rounded shadow-sm" alt="Treatment">
           </div>
           <div class="col-4">
-            <img src="images/AboutImageServices3.webp" class="img-fluid rounded shadow-sm" alt="Therapy">
+            <img loading="lazy" src="images/AboutImageServices3.webp" class="img-fluid rounded shadow-sm" alt="Therapy">
           </div>
         </div>
       </div>
       
       <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-left">
           <div class=" image-wrapper">
-             <img src="images/ProfileBig.webp" class="img-fluid rounded shadow" alt="Dr Pashmin">
+             <img loading="lazy" src="images/ProfileBig.webp" class="img-fluid rounded shadow" alt="Dr Pashmin">
           </div>
       </div>
     </div>
