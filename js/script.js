@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </a> 
               </li>
               <li class="d-flex align-items-center gap-2 text-muted mt-2">
-                <a href="mailto:https://drpashminwellnessclinic.com" class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
-                  <iconify-icon icon="mdi:web" class="text-primary"></iconify-icon> drpashminwellnessclinic.com
+                <a href="mailto:dr.pashminwellnessclinic@gmail.com" class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                  <iconify-icon icon="mdi:gmail" class="text-primary"></iconify-icon> dr.pashminwellnessclinic@gmail.com
                 </a>
               </li>
             </ul>
