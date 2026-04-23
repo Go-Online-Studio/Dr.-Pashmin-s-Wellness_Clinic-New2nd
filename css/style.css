@@ -1005,7 +1005,7 @@ iconify-icon {
   background-image: url('https://img.freepik.com/free-photo/groceries-scale-with-mock-up-note_23-2148262143.jpg?t=st=1776065468~exp=1776069068~hmac=b1df999b494e562ad5d0dad06cd83e77c07430634d1233a54e1180a06f8d380a&w=1060');
 }
 .ayurveda-banner { 
-  background-image: url('https://img.freepik.com/free-photo/side-view-woman-working-spa_23-2150911789.jpg?t=st=1776065332~exp=1776068932~hmac=87eb13c57669081df2b34c641254119600959a45871de249cd17d526f6bd997a&w=1060');
+  background-image: url('../images/AuthenticAyurvedicBanner.webp');
 } 
 
 .category-banner-overlay,
@@ -1236,7 +1236,7 @@ iconify-icon {
 
  /* IV Drip banner override */
     .iv-drip-banner {
-      background-image: url('https://img.freepik.com/free-photo/patient-getting-chemotherapy-treatment_23-2149261090.jpg?t=st=1776064243~exp=1776067843~hmac=59109bb0539d523b2ad48f43f4973fcd4bd42e67e9d84885235495b88f458034&w=1480');
+      background: url('../images/IV_DripBanner.webp') center/cover no-repeat; 
     }
 
     /* IV Drip unique sections */
