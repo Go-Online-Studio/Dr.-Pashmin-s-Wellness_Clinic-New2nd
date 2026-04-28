@@ -225,6 +225,11 @@ main {
   color: var(--secondary);
 }
 
+abbr[title] {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
 .contInfo {
   min-width: 224px;
 }
@@ -811,9 +816,6 @@ iconify-icon {
   margin-bottom: 25px;
 }
 
-.footer .text-muted {
-  color: #adb5bd !important;
-}
 
 .footer .footer-links {
   list-style: none;
@@ -1622,11 +1624,22 @@ select option{
 .footer h5, .footer .text-muted, .footer p {
   color: #ffffff !important;
 }
+
+#footer > div > div.footer-bottom.text-center.text-muted.mt-5{
+  color: #e4e4e4 !important; 
+}
 .footer a {
   color: var(--bg-blush) !important;
 }
 .footer a:hover {
   color: var(--light) !important;
+}
+.footer-bottom  a {
+  color: var(--bg-blush) !important;
+  font-weight: bold;
+}
+.footer-bottom  a:hover {
+  color: #ffffff !important; 
 }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.2) !important;

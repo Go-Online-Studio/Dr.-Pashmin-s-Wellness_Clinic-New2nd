@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
         <div class="footer-bottom text-center text-muted mt-5">
-          &copy; <span id="year"></span> Dr. Pashmin's Wellness Clinic. All Rights Reserved.
-        </div>
+          &copy; <span id="year"></span> Dr. Pashmin's Wellness Clinic. All Rights Reserved. Designed & Developed by <a href="https://shriiitrackingsolution.in/" target="_blank"><abbr title="Shriii Tracking Solution">STS</abbr></a>
+        </div> 
       </div>
     `;
   }
